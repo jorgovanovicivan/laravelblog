@@ -8,7 +8,7 @@ use Laravelista\Comments\Commentable;
 class Post extends Model
 {
     use HasFactory,Commentable;
- protected $fillable=['title','body'];
+ protected $fillable=['title','body', 'user_id',];
   public function user(){
 
 

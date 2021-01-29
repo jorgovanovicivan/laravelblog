@@ -11,7 +11,7 @@
 @foreach($posts as $post)
 
 <li class="list-group-item"></li>
-<h3 >  <a class="text-info" href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
+<h3 >  <a class="text-info" href="/posts/{{$post->id}}User::factory()->count(5)->create();">{{$post->title}}</a></h3>
 
 <small>Written on {{$post->created_at}}</small>
 @endforeach

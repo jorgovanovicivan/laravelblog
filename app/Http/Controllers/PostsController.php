@@ -34,8 +34,8 @@ class PostsController extends BaseController
   // $posts=DB::select('SELECT *FROM posts');
        // return view('posts.index')->with('posts', $posts);
        $posts = PostModel::all();
-       return view('posts.index')->with('posts', $posts);
-     //  return $this->sendResponse(PostResource::collection($posts), 'Products retrieved successfully');
+      return view('posts.index')->with('posts', $posts);
+    // return $this->sendResponse(PostResource::collection($posts), 'Products retrieved successfully');
     // return response()->json(Post::get(),200);
 
     }
@@ -46,7 +46,8 @@ class PostsController extends BaseController
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    { 
+      
         return view('posts.create');
     }
 
